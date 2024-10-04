@@ -1,0 +1,101 @@
+<html>
+ <head>
+  <title>
+   Web Page
+  </title>
+  <style>
+   body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 5px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 5px solid #555;
+            width: 30px;
+            height: 30px;
+            animation: spin 2s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .url-bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 30px;
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+        .url-bar .url {
+            margin-left: 10px;
+            font-size: 14px;
+        }
+        .status-bar {
+            position: absolute;
+            top: 30px;
+            left: 0;
+            width: 100%;
+            height: 20px;
+            background-color: #444;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            box-sizing: border-box;
+            font-size: 12px;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="url-bar">
+    <i class="fas fa-lock">
+    </i>
+    <span class="url">
+     inzie.sadbuy.cloudxingyu.me
+    </span>
+   </div>
+   <div class="status-bar">
+    <span>
+     9:22
+    </span>
+    <span style="margin-left: auto;">
+     6.4KB/d
+    </span>
+    <span style="margin-left: 10px;">
+     76%
+    </span>
+   </div>
+   <img alt="A person with dark eye makeup peeking from behind a door" class="image" height="1544" src="https://storage.googleapis.com/a1aa/image/WxCPrYfMRvyf1Egj1VDuk781ZaBI6s4exEOfgfpO2NKmyEbcC.jpg" width="720"/>
+   <div class="loading">
+   </div>
+  </div>
+ </body>
+</html>
